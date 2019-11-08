@@ -22,18 +22,39 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var newGame: UIButton!
     
+    var currentPlayer: PlayerSelector = .playerOne
+    
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   
     
     }
-
-    @IBAction func gamerButton(_ sender: Any) {
-    }
     
+    
+    @IBAction func gameButtonPressed(_ sender: UIButton) {
+        switch currentPlayer {
+        case .playerOne:
+            sender.setTitle(currentPlayer.playerSymbol(), for: .normal)
+           sender.isEnabled = false
+            currentPlayer = .playerTwo
+            
+        
+        case .playerTwo:
+            sender.setTitle(currentPlayer.playerSymbol(), for: .normal)
+          sender.isEnabled = false
+            currentPlayer = .playerOne
+        }
+    
+  
+            
+            
+ 
 }
 
-
-
-// create a contion
+// enable the button,
+// player switches
+//the win or lose
+// new game
+}

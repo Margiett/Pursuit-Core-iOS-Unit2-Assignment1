@@ -9,7 +9,8 @@
 import Foundation
 
 class TicTacToeBrain {
-   static let winningAlgo = [[1,5,9], [1,2,3], [4,5,6], [7,8,9], [3,5,7],[2,5,8],[3,6,9],[1,4,7]]
+    
+    let winningAlgo = [[1,5,9], [1,2,3], [4,5,6], [7,8,9], [3,5,7],[2,5,8],[3,6,9],[1,4,7]]
     //MARK: NOTES1
     // this are called properties
    let playerOne: String
@@ -24,9 +25,13 @@ class TicTacToeBrain {
         // you use self when,are calling the original property that was created for the class. not for the function, the one in init the peramerters for the type.
         
     }
-    static func winningAlgo(_ winner: [[Int]]) -> Bool {
+     func winningAlgorithm(_ winner: [[Int]]) -> Bool {
     
+      
+        
     return true
+        
+        
     }
 }
 

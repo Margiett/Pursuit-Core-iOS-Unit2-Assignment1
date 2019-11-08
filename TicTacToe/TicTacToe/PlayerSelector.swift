@@ -12,6 +12,7 @@ enum PlayerSelector {
     case playerOne
     case playerTwo
     
+    
     func playerSymbol() -> String {
         switch self{
         case .playerOne:
